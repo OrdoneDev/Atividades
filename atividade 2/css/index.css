@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    background-color: silver;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: 120px 175px auto 60px;
+    grid-template-areas:
+    "topo topo"
+    "banner lateral-direita"
+    "corpo lateral-direita"
+    "rodape rodape";
+}
+
+.topo {
+    grid-area: topo;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.corpo {
+    grid-area: corpo;
+    display: flex;
+    flex-direction: row;
+}
+
+.lateral-direita {
+    grid-area: lateral-direita;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: black;
+    opacity: .85;
+    padding: 15px;
+}
+
+.rodape h2{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.topo a {
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.lateral-direita img{
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.corpo img{
+    width: 100%;
+    height: 50%;
+    margin: auto 30px;
+}

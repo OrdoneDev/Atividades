@@ -1,0 +1,34 @@
+.foto-astronauta{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1em;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+h1{
+    margin-left: .2em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-left: 2em;
+}
+
+.subtitulo-texto{
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+#rodape-pagina {
+    text-align: right;
+    right: .5em;
+    bottom: .5em;
+    position: fixed;
+}
