@@ -2,11 +2,10 @@ import pessoas from "../models/Pessoa.js"
 
 class PessoaController{
     static listarPessoaByName = (req, res) => {
-        const { nome } = req.query
+        const { id } = req.params
 
         try{
-            const pessoa_return = pessoas.getByName(nome)
-            console.log(pessoa_return)
+            const pessoa_return = pessoas.getById(id)
             res.status(200).json(pessoa_return)
         }catch(error){
             res.status(500).send({message: `${error.message} - Ocorreu um erro na função de listar pessoa pelo nome!`})

@@ -5,6 +5,6 @@ const router = express.Router()
 
 router
     .get('/pessoas', PessoaController.listarPessoas)
-    .get('/pessoas/busca', PessoaController.listarPessoaByName)
+    .get('/pessoas/:id', PessoaController.listarPessoaByName)
 
 export default router

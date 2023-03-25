@@ -1,7 +1,7 @@
 Como solicitar requisições:
 
-Listar pessoa por nome:
-http://localhost:3000/pessoas/busca?nome=David
+Listar pessoa por id:
+http://localhost:3000/pessoas/1
 
 Listar pessoas:
 http://localhost:3000/pessoas/
